@@ -118,8 +118,6 @@ export const personalData = {
 
 ---
 
----
-
 # Packages Used :package:
 
 | Used Package List  |
