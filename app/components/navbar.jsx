@@ -45,7 +45,7 @@ function Navbar() {
 
 
         <button
-          className="block md:hidden text-white focus:outline-none"
+          className="block md:hidden text-[#16f2b3] focus:outline-none"
           onClick={toggleMenu}
         >
           ☰
@@ -86,9 +86,9 @@ function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex flex-col items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center z-50">
           <button
-            className="absolute top-5 right-5 text-white text-3xl focus:outline-none"
+            className="absolute top-5 right-5 text-pink-500 font-bold text-3xl focus:outline-none"
             onClick={toggleMenu}
           >
             &times;
@@ -96,7 +96,7 @@ function Navbar() {
           <ul className="flex flex-col items-center space-y-4">
             <li>
               <Link
-                className="text-white text-xl no-underline outline-none hover:no-underline"
+                className="text-[#16f2b3] text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#about"
                 onClick={closeMenu}
               >
@@ -105,7 +105,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                className="text-white text-xl no-underline outline-none hover:no-underline"
+                className="text-pink-500 text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#experience"
                 onClick={closeMenu}
               >
@@ -114,7 +114,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                className="text-white text-xl no-underline outline-none hover:no-underline"
+                className="text-[#16f2b3] text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#skills"
                 onClick={closeMenu}
               >
@@ -123,7 +123,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                className="text-white text-xl no-underline outline-none hover:no-underline"
+                className="text-pink-500 text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#education"
                 onClick={closeMenu}
               >
@@ -132,7 +132,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                className="text-white text-xl no-underline outline-none hover:no-underline"
+                className="text-[#16f2b3] text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/blog"
                 onClick={closeMenu}
               >
@@ -141,7 +141,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                className="text-white text-xl no-underline outline-none hover:no-underline"
+                className="text-pink-500 text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#projects"
                 onClick={closeMenu}
               >
