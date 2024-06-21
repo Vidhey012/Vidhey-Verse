@@ -26,7 +26,7 @@ function Navbar() {
               <img 
               src="logo_name.png" 
               alt="Logo" 
-              className="h-10 w-10 mr-2" 
+              className="" 
             />
           </Link>
         </div>

@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 1,
-        title: 'Student Attendance Application',
+        title: 'E-Attendance Application',
         name: 'Student-Portal',
         description: "During my internship at APSSDC, I developed a comprehensive Student-Portal application aimed at enhancing attendance tracking efficiency and reducing administrative workload. This application featured a sophisticated hierarchy with five distinct views: Admin, Principal, Department-Head, Faculty, and Student. My responsibilities included designing and implementing the backend using Java and Spring-MVC framework, and managing data with PostgreSQL database. The project significantly improved administrative processes by automating attendance tracking and streamlining communication across different levels within the educational institution.",
         tools: ['HTML','CSS','JS','Bootstrap','Sweet-Alerts','Font-Awesome','EmailJs','Java', 'Spring-MVC', 'PostgreSQL'],
