@@ -36,9 +36,9 @@ function Navbar() {
             href="/"
             className=" text-[#16f2b3] text-3xl font-bold">
               <img 
-              src="logo_light.png" 
+              src="logo.png" 
               alt="Logo" 
-              className="" 
+              className="h-10 md:h-19" 
             />
           </Link>
         </div>
