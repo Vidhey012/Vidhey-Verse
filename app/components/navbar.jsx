@@ -1,8 +1,20 @@
 // @flow strict
+"use client";
+
 import Link from "next/link";
-import { personalData } from "@/utils/data/personal-data";
+import { useState } from "react";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
@@ -31,31 +43,116 @@ function Navbar() {
           </Link>
         </div>
 
-        <ul className="mt-4 flex h-screen max-h-0 w-full flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100" id="navbar-default">
+
+        <button
+          className="block md:hidden text-white focus:outline-none"
+          onClick={toggleMenu}
+        >
+          ☰
+        </button>
+
+        <ul className="hidden md:flex md:flex-row md:space-x-1">
           <li>
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#about">
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">ABOUT</div>
             </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#experience"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EXPERIENCE</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#experience">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EXPERIENCE</div>
+            </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#skills"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">SKILLS</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#skills">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">SKILLS</div>
+            </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#education"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#education">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div>
+            </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">CERTIFIACTIONS</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">CERTIFICATIONS</div>
+            </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div>
+            </Link>
           </li>
         </ul>
       </div>
+
+      {menuOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex flex-col items-center justify-center z-50">
+          <button
+            className="absolute top-5 right-5 text-white text-3xl focus:outline-none"
+            onClick={toggleMenu}
+          >
+            &times;
+          </button>
+          <ul className="flex flex-col items-center space-y-4">
+            <li>
+              <Link
+                className="text-white text-xl no-underline outline-none hover:no-underline"
+                href="/#about"
+                onClick={closeMenu}
+              >
+                ABOUT
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-white text-xl no-underline outline-none hover:no-underline"
+                href="/#experience"
+                onClick={closeMenu}
+              >
+                EXPERIENCE
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-white text-xl no-underline outline-none hover:no-underline"
+                href="/#skills"
+                onClick={closeMenu}
+              >
+                SKILLS
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-white text-xl no-underline outline-none hover:no-underline"
+                href="/#education"
+                onClick={closeMenu}
+              >
+                EDUCATION
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-white text-xl no-underline outline-none hover:no-underline"
+                href="/blog"
+                onClick={closeMenu}
+              >
+                CERTIFICATIONS
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-white text-xl no-underline outline-none hover:no-underline"
+                href="/#projects"
+                onClick={closeMenu}
+              >
+                PROJECTS
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
-};
+}
 
 export default Navbar;
