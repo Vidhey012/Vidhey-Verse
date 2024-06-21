@@ -24,7 +24,7 @@ function Navbar() {
             href="/"
             className=" text-[#16f2b3] text-3xl font-bold">
               <img 
-              src="logo_name.png" 
+              src="logo_light.png" 
               alt="Logo" 
               className="" 
             />
