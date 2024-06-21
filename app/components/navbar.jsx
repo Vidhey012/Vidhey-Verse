@@ -45,7 +45,7 @@ function Navbar() {
 
 
         <button
-          className="block md:hidden text-[#16f2b3] focus:outline-none"
+          className="block md:hidden text-[#16f2b3] font-bold focus:outline-none"
           onClick={toggleMenu}
         >
           ☰
