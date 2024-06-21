@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 1,
-        title: 'Student Attendance & Marksheet Application',
+        title: 'Student Attendance Application',
         name: 'Student-Portal',
         description: "During my internship at APSSDC, I developed a comprehensive Student-Portal application aimed at enhancing attendance tracking efficiency and reducing administrative workload. This application featured a sophisticated hierarchy with five distinct views: Admin, Principal, Department-Head, Faculty, and Student. My responsibilities included designing and implementing the backend using Java and Spring-MVC framework, and managing data with PostgreSQL database. The project significantly improved administrative processes by automating attendance tracking and streamlining communication across different levels within the educational institution.",
         tools: ['HTML','CSS','JS','Bootstrap','Sweet-Alerts','Font-Awesome','EmailJs','Java', 'Spring-MVC', 'PostgreSQL'],
@@ -34,7 +34,7 @@ export const projectsData = [
     },
     {
         id: 4,
-        title: 'Website Controlling Mobile Application',
+        title: 'Websites Controlling App',
         name: 'Control Center',
         description: 'As part of a project assignment, I conceptualized, designed, and launched a sophisticated mobile application tailored for efficient website operations management. Utilizing Android Studio and Java, I developed a robust application that facilitated real-time monitoring and rapid response to website issues, effectively reducing response time by 50%. The app\'s intuitive interface enabled seamless navigation and accessibility, enhancing user engagement by 40%. I integrated Firebase for robust backend support, ensuring secure data storage, and optimizing performance management across platforms.',
         tools: ['Android Studio', 'Java', 'Firebase', 'XML', 'Git'],

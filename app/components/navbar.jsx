@@ -6,12 +6,28 @@ function Navbar() {
   return (
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
+        {/* <div className="flex flex-shrink-0 items-center">
+          <Link
+            href="/"
+            className="flex items-center text-[#16f2b3] text-3xl font-bold">
+              <img 
+              src="favicon.ico" 
+              alt="Logo" 
+              className="h-10 w-10 mr-1" 
+            />
+            <span>VIDHEY</span><span className=" text-pink-500">&nbsp;BHOGADI</span>
+          </Link>
+        </div> */}
+
         <div className="flex flex-shrink-0 items-center">
           <Link
-            href={personalData.github}
-            target="_blank"
+            href="/"
             className=" text-[#16f2b3] text-3xl font-bold">
-              VIDHEY BHOGADI
+              <img 
+              src="logo_name.png" 
+              alt="Logo" 
+              className="h-10 w-10 mr-2" 
+            />
           </Link>
         </div>
 
