@@ -3,13 +3,16 @@
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsPersonVcardFill } from "react-icons/bs";
 import { FaFacebook, FaTwitterSquare, FaDev } from "react-icons/fa";
-import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiInstagram } from "react-icons/si";
+import Typewriter from '@/app/typewriter/Typewriter';
+import '@/app/typewriter/Typewriter.css';
 
 function HeroSection() {
+  const designations = ["Full-Stack Developer.", "Machine Learning Scientist.", "Mobile App Developer.", "Software Developer."];
+
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <Image
@@ -27,8 +30,7 @@ function HeroSection() {
             This is {' '}
             <span className=" text-pink-500"><a href={personalData.github} target="_blank">{personalData.name}</a></span>
             {` , I'm a Professional `}
-            <span className=" text-[#16f2b3]"><a href="/#projects">{personalData.designation1}</a></span> & <span className=" text-[#16f2b3]"><a href="/#projects">{personalData.designation2}</a></span>
-            .
+            <span className=" text-[#16f2b3]"><a href="/#projects"><Typewriter texts={designations} speed={100} pause={2000} /></a></span>
           </h1>
 
           <div className="my-12 flex items-center gap-5">
@@ -87,7 +89,7 @@ function HeroSection() {
             <Link className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href={personalData.resume}
             >
               <span>Get Resume</span>
-              <MdDownload size={16} />
+              <BsPersonVcardFill size={16} />
             </Link>
           </div>
 

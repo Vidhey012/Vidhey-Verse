@@ -44,7 +44,7 @@ function ProjectCard({ project }) {
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">source:</span>
             <span className="text-gray-400">{`url('`}</span>
-            <span className="text-cyan-400"><Link href={project.code} target="_blank"><u>{project.name}-Source</u></Link></span>
+            <span className="text-cyan-400"><Link href={project.code} target="_blank"><u>{project.name}-Link</u></Link></span>
             <span className="text-gray-400">{`'),`}</span>
           </div>
           <div className="ml-4 lg:ml-8 mr-2">
