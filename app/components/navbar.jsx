@@ -68,6 +68,11 @@ function Navbar() {
             </Link>
           </li>
           <li>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div>
+            </Link>
+          </li>
+          <li>
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#education">
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div>
             </Link>
@@ -75,11 +80,6 @@ function Navbar() {
           <li>
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog">
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">CERTIFICATIONS</div>
-            </Link>
-          </li>
-          <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects">
-              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div>
             </Link>
           </li>
         </ul>
@@ -124,6 +124,15 @@ function Navbar() {
             <li>
               <Link
                 className="text-pink-500 text-2xl font-bold no-underline outline-none hover:no-underline"
+                href="/#projects"
+                onClick={closeMenu}
+              >
+                PROJECTS
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-[#16f2b3] text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#education"
                 onClick={closeMenu}
               >
@@ -132,20 +141,11 @@ function Navbar() {
             </li>
             <li>
               <Link
-                className="text-[#16f2b3] text-2xl font-bold no-underline outline-none hover:no-underline"
+                className="text-pink-500 text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/blog"
                 onClick={closeMenu}
               >
                 CERTIFICATIONS
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="text-pink-500 text-2xl font-bold no-underline outline-none hover:no-underline"
-                href="/#projects"
-                onClick={closeMenu}
-              >
-                PROJECTS
               </Link>
             </li>
           </ul>

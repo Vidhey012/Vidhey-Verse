@@ -7,7 +7,7 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "Full Stack Developer & DB Admin",
+    title: "MEAN Stack Developer & DB Admin",
     company: "CTRI Rajahmundry",
     duration: "(August 2023 - November 2023)"
   },

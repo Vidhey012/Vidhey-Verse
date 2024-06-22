@@ -27,7 +27,7 @@ function HeroSection() {
             This is {' '}
             <span className=" text-pink-500"><a href={personalData.github} target="_blank">{personalData.name}</a></span>
             {` , I'm a Professional `}
-            <span className=" text-[#16f2b3]"><a href="/#projects">{personalData.designation}</a></span>
+            <span className=" text-[#16f2b3]"><a href="/#projects">{personalData.designation1}</a></span> & <span className=" text-[#16f2b3]"><a href="/#projects">{personalData.designation2}</a></span>
             .
           </h1>
 
@@ -123,6 +123,8 @@ function HeroSection() {
                 <span className="text-gray-400">{`['`}</span>
                 <span className="text-amber-300">AngularJS</span>
                 <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">React</span>
+                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">SpringMVC</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">CodeIgniter</span>
@@ -138,6 +140,18 @@ function HeroSection() {
                 <span className="text-amber-300">MongoDB</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">GitHub</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">MEAN Stack</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">MERN Stack</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Data-Visualization</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Machine-Learning</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Deep-Learning</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">NLP</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">...</span>
                 <span className="text-gray-400">{"'],"}</span>
