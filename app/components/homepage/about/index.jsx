@@ -2,8 +2,6 @@
 
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
-import { BiBorderRadius } from "react-icons/bi";
-
 
 function AboutSection() {
   return (
