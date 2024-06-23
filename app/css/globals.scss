@@ -15,6 +15,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #0d1224;
+  cursor: url('/pointer.png'), none;
 }
 
 #sticky-card-1 {
@@ -36,4 +37,8 @@ body {
 .sticky-card {
   // padding-top: calc(var(--index) * 2.5rem);
   top: calc(var(--index) * 4rem);
+}
+
+.cursor-pointer {
+  cursor: url('/pointer.png'), pointer;
 }
