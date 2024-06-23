@@ -65,8 +65,8 @@ function ProjectCard({ project }) {
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
         <code className="font-mono text-xs md:text-sm lg:text-base">
         {isPopupVisible && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60">
-            <div ref={imageRef} className="relative flex items-center justify-center transform scale-80 md:scale-50 mr-5 ml-5 rounded-lg md:rounded-3xl border-2 md:border-4 border-pink-500">
+          <div className="scroll inset-0 flex items-center justify-center mb-5">
+            <div ref={imageRef} className="relative flex items-center justify-center transform mr-5 ml-5 rounded-lg md:rounded-3xl border-2 md:border-4 border-pink-500">
               <img
                 src={project.demo}
                 alt={`Demo of ${project.name}`}
@@ -74,6 +74,7 @@ function ProjectCard({ project }) {
               />
             </div>
           </div>
+          
       )}
           <div className="blink">
             <span className="mr-2 text-pink-500">const</span>
