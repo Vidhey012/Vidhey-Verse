@@ -18,7 +18,7 @@ function AboutSection() {
            🤔 Who am I ?
           </p>
           <p className="text-gray-200 text-sm lg:text-lg">
-            {personalData.description}&nbsp;That&apos;s all about me,
+            {personalData.description}&nbsp;That is all about me,
             <span className=" text-pink-500"><a href="#contact">&nbsp;then what about you !</a></span>
           </p>
         </div>
