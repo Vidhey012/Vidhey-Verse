@@ -7,25 +7,25 @@ function ProjectCard({ project }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const imageRef = useRef(null);
 
-  const handleClosePopup = () => {
-    setIsPopupVisible(false);
-  };
+  // const handleClosePopup = () => {
+  //   setIsPopupVisible(false);
+  // };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (isPopupVisible) {
-        setIsPopupVisible(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (isPopupVisible) {
+  //       setIsPopupVisible(false);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('touchmove', handleClosePopup);
+  //   window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('touchmove', handleClosePopup);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('touchmove', handleClosePopup);
-    };
-  }, [isPopupVisible]);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //     window.removeEventListener('touchmove', handleClosePopup);
+  //   };
+  // }, [isPopupVisible]);
 
 
   useEffect(() => {
@@ -65,8 +65,8 @@ function ProjectCard({ project }) {
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
         <code className="font-mono text-xs md:text-sm lg:text-base">
         {isPopupVisible && (
-          <div className="scroll inset-0 flex items-center justify-center mb-5">
-            <div ref={imageRef} className="relative flex items-center justify-center transform mr-5 ml-5 rounded-lg md:rounded-3xl border-2 md:border-4 border-pink-500">
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60">
+            <div ref={imageRef} className="relative flex items-center justify-center transform scale-80 md:scale-50 mr-5 ml-5 rounded-lg md:rounded-3xl border-2 md:border-4 border-pink-500">
               <img
                 src={project.demo}
                 alt={`Demo of ${project.name}`}
@@ -74,7 +74,6 @@ function ProjectCard({ project }) {
               />
             </div>
           </div>
-          
       )}
           <div className="blink">
             <span className="mr-2 text-pink-500">const</span>
