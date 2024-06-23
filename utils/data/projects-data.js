@@ -8,7 +8,7 @@ export const projectsData = [
         tools: ['Python', 'Django', 'Natural Language Processing', 'Machine Learning', 'Feed Forward Neural Network', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Natural Language Toolkit'],
         role: 'Machine Learning Engineer',
         code: 'https://github.com/Vidhey012/Final-Year-Project-BTech',
-        demo: '',
+        demo: '/Project-1.png',
         image: '',
 
     },
@@ -21,7 +21,7 @@ export const projectsData = [
         tools: ['HTML','CSS','JS','Bootstrap','Sweet-Alerts','Font-Awesome','EmailJs','Python', 'Flask', 'MySQL'],
         role: 'Full Stack Developer',
         code: 'https://github.com/Vidhey012/Learnfinity',
-        demo: '',
+        demo: '/Project-2.png',
         image: '',
     },
     {
@@ -33,7 +33,7 @@ export const projectsData = [
         tools: ['Android Studio', 'Java', 'Firebase', 'XML', 'Git'],
         role: 'Application Developer',
         code: 'https://github.com/Vidhey012/ControlCenter',
-        demo: '',
+        demo: '/Project-3.png',
         image: '',
 
     },
@@ -46,7 +46,7 @@ export const projectsData = [
         tools: ['HTML','CSS','JS','Bootstrap','Sweet-Alerts','Font-Awesome','EmailJs','PHP', 'Code-Igniter', 'MySQL'],
         role: 'Website Administrator',
         code: 'https://jntucek.ac.in/',
-        demo: '',
+        demo: '/Project-4.png',
         image: '',
     }
     

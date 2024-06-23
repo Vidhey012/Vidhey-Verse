@@ -30,7 +30,7 @@ const Typewriter = ({ texts, speed = 100, pause = 2000, colors = ['#16f2b3', '#f
   return (
     <span style={{ color: colors[colorIndex] }}>
       {displayedText}
-      <span className="cursor">|</span>
+      <span className="blinking-cursor">|</span>
     </span>
   );
 };

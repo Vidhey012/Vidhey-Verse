@@ -13,4 +13,17 @@
       background-color: black;
     }
   }
+
+  .blinking-cursor {
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
   
