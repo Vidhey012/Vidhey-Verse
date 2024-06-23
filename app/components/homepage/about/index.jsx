@@ -17,10 +17,11 @@ function AboutSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
         <div className="order-2 lg:order-1">
           <p className="text-3xl font-bold leading-10 mb-5 mt-5 text-[#16f2b3] md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
-           🤔 Who I am ?
+           🤔 Who am I ?
           </p>
           <p className="text-gray-200 text-sm lg:text-lg">
-            {personalData.description}
+            {personalData.description}&nbsp;That's all about me,
+            <span className=" text-pink-500"><a href="#contact">&nbsp;then what about you !</a></span>
           </p>
         </div>
         <div className="flex justify-center order-1 lg:order-2 mr-5">
