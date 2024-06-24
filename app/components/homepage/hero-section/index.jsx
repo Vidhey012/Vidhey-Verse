@@ -3,8 +3,8 @@
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
-import { BsGithub, BsLinkedin, BsPersonVcardFill } from "react-icons/bs";
-import { FaFacebook, FaTwitterSquare, FaMedium } from "react-icons/fa";
+import { BsGithub, BsLinkedin, BsPersonVcardFill, BsMedium } from "react-icons/bs";
+import { FaFacebook, FaTwitterSquare, } from "react-icons/fa";
 import { RiContactsFill } from "react-icons/ri";
 import { SiInstagram } from "react-icons/si";
 import Typewriter from '@/app/typewriter/Typewriter';
@@ -46,7 +46,7 @@ function HeroSection() {
               href={`https://medium.com/@${personalData.mediumUsername}`}
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <FaMedium size={30} />
+              <BsMedium size={30} />
             </Link>
             <Link
               href={personalData.facebook}
