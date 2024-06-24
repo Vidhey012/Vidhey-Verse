@@ -3,7 +3,7 @@ import { personalData } from '@/utils/data/personal-data';
 import Link from 'next/link';
 import { BiLogoLinkedin } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
-import { FaFacebook,FaDev } from 'react-icons/fa';
+import { FaFacebook,FaMedium } from 'react-icons/fa';
 import { SiInstagram } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoGithub, IoMdCall } from "react-icons/io";
@@ -80,8 +80,8 @@ function ContactSection() {
               />
             </Link> */}
             <Link
-              target="_blank" href={`https://dev.to/${personalData.devUsername}/who-am-i-3dln`}>
-              <FaDev 
+              target="_blank" href={`https://medium.com/@${personalData.mediumUsername}`}>
+              <FaMedium 
                 className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer" 
                 size={48} 
               />
