@@ -42,3 +42,33 @@ body {
 .cursor-pointer {
   cursor: url('/pointer.png'), none;
 }
+
+.neon-text {
+  color: #16f2b3;
+  text-shadow: 0 0 3px rgba(22, 242, 179, 0.8), 0 0 6px rgba(22, 242, 179, 0.8), 0 0 12px rgba(22, 242, 179, 0.8);
+}
+
+.neon-text-yellow {
+  color: #FFD700;
+  text-shadow: 0 0 3px rgba(255, 215, 0, 0.8), 0 0 6px rgba(255, 215, 0, 0.8), 0 0 12px rgba(255, 215, 0, 0.8);
+}
+
+.neon-text-orange {
+  color: #ff4500;
+  text-shadow: 0 0 3px rgba(255, 69, 0, 0.8), 0 0 6px rgba(255, 69, 0, 0.8), 0 0 12px rgba(255, 69, 0, 0.8);
+}
+
+.neon-text-blue {
+  color: #1E90FF;
+  text-shadow: 0 0 3px rgba(30, 144, 255, 0.8), 0 0 6px rgba(30, 144, 255, 0.8), 0 0 12px rgba(30, 144, 255, 0.8);
+}
+
+.neon-text-green {
+  color: #32CD32;
+  text-shadow: 0 0 3px rgba(50, 205, 50, 0.8), 0 0 6px rgba(50, 205, 50, 0.8), 0 0 12px rgba(50, 205, 50, 0.8);
+}
+
+.neon-text-purple {
+  color: #800080;
+  text-shadow: 0 0 3px rgba(128, 0, 128, 0.8), 0 0 6px rgba(128, 0, 128, 0.8), 0 0 12px rgba(128, 0, 128, 0.8);
+}

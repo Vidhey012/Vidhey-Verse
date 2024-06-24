@@ -96,56 +96,56 @@ function Navbar() {
           <ul className="flex flex-col items-center space-y-4">
             <li>
               <Link
-                className="text-[#16f2b3] text-2xl font-bold no-underline outline-none hover:no-underline"
+                className="neon-text text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#about"
                 onClick={closeMenu}
               >
-                ABOUT
+                ABOUT 🔍
               </Link>
             </li>
             <li>
               <Link
-                className="text-pink-500 text-2xl font-bold no-underline outline-none hover:no-underline"
+                className="neon-text-yellow text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#experience"
                 onClick={closeMenu}
               >
-                EXPERIENCE
+                EXPERIENCE 💼
               </Link>
             </li>
             <li>
               <Link
-                className="text-[#16f2b3] text-2xl font-bold no-underline outline-none hover:no-underline"
+                className="neon-text-orange text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#skills"
                 onClick={closeMenu}
               >
-                SKILLS
+                SKILLS 🧠
               </Link>
             </li>
             <li>
               <Link
-                className="text-pink-500 text-2xl font-bold no-underline outline-none hover:no-underline"
+                className="neon-text-blue text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#projects"
                 onClick={closeMenu}
               >
-                PROJECTS
+                PROJECTS 💡
               </Link>
             </li>
             <li>
               <Link
-                className="text-[#16f2b3] text-2xl font-bold no-underline outline-none hover:no-underline"
+                className="neon-text-green text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/#education"
                 onClick={closeMenu}
               >
-                EDUCATION
+                EDUCATION 🎓
               </Link>
             </li>
             <li>
               <Link
-                className="text-pink-500 text-2xl font-bold no-underline outline-none hover:no-underline"
+                className="neon-text-purple text-2xl font-bold no-underline outline-none hover:no-underline"
                 href="/blog"
                 onClick={closeMenu}
               >
-                CERTIFICATIONS
+                CERTIFICATIONS 📜
               </Link>
             </li>
           </ul>

@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>𝓥𝓲𝓭𝓱𝓮𝔂 𝓑𝓱𝓸𝓰𝓪𝓭𝓲</title>
+        <title>𝐕𝐢𝐝𝐡𝐞𝐲 𝐁𝐡𝐨𝐠𝐚𝐝𝐢</title>
         <link rel="icon" type="image/x-icon" href="title_logo.ico"/>
       </head>
       <body className={inter.className}>
