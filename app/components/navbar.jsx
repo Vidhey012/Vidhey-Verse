@@ -88,7 +88,7 @@ function Navbar() {
       {menuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center z-50">
           <button
-            className="absolute top-5 right-5 text-pink-500 font-bold text-3xl focus:outline-none"
+            className="absolute top-5 right-5 neon-text-purple font-bold text-3xl focus:outline-none"
             onClick={toggleMenu}
           >
             &times;
