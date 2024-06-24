@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import Navbar from './components/navbar';
 // import AudioPlayer from './components/AudioPlayer';
 import SwalPopup from './components/SwalPopup';
+import ScrollToTopButton from './ScrollToTop/ScrollToTopButton';
 import './css/card.scss';
 import './css/globals.scss';
 const inter = Inter({ subsets: ['latin'] });
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
         {/* <AudioPlayer /> */}
+        <ScrollToTopButton />
       </body>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM} />
     </html>
