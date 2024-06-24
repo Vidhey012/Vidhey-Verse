@@ -137,6 +137,32 @@ body {
   z-index: -1;
 }
 
+.swal-image {
+  border-radius: 20px;
+  margin: 0px;
+}
+
+.swal-popup {
+  height:auto;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.9); 
+  border-radius: 20px; 
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.5), 0 0 60px rgba(255, 0, 255, 0.5);
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.swal-popup::after {
+  height:auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 70%);
+  border-radius: 20px;
+  z-index: -1;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -155,4 +181,12 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #8b00ff;
+}
+
+.topOfAll{  
+  z-index: 10000;
+}
+
+.projImgTop{  
+  z-index: 10000;
 }
