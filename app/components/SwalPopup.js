@@ -7,10 +7,18 @@ const SwalPopup = () => {
   useEffect(() => {
 
     Swal.fire({
-      title: 'Welcome!',
-      text: 'This is a message from SweetAlert',
-      icon: 'info',
-      confirmButtonText: 'OK'
+      title: 'Welcome to my Digital Space 🌟',
+      text: 'Let\'s start exploring this website with a musical vibe 🎸🎧🎷',
+      imageUrl: '/profile.jpg',
+      imageAlt: 'Title Logo',
+      showConfirmButton: true,
+      confirmButtonText: "Explore 🚀",
+      backdrop: `
+        rgba(0, 0, 3, 0.8)
+        url("/title_logo.ico")
+        center center
+        no-repeat
+      `
     }).then((result) => {
         const audio = new Audio("audio\\Music1.mp3");
         audio.play();
