@@ -13,9 +13,9 @@ const SwalPopup = () => {
       imageAlt: 'Title Logo',
       showConfirmButton: true,
       confirmButtonText: "Explore 🚀",
-      backdrop: `
+      background: `
         rgba(0, 0, 3, 0.8)
-        url("/title_logo.ico")
+        url("/popupbg.jpg")
         center center
         no-repeat
       `

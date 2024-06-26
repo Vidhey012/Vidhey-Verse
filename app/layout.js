@@ -12,7 +12,7 @@ import './css/globals.scss';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Vidhey Bhogadi',
+  title: '𝐕𝐢𝐝𝐡𝐞𝐲 𝐁𝐡𝐨𝐠𝐚𝐝𝐢',
   description: 'This is the portfolio of Vidhey Bhogadi. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.',
 };
 
@@ -20,7 +20,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>𝐕𝐢𝐝𝐡𝐞𝐲 𝐁𝐡𝐨𝐠𝐚𝐝𝐢</title>
         <link rel="icon" type="image/x-icon" href="title_logo.ico"/>
       </head>
       <body className={inter.className}>
