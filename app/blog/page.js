@@ -3,6 +3,17 @@
 import { personalData } from "@/utils/data/personal-data";
 import BlogCard from "../components/homepage/blog/blog-card";
 
+async function getBlogs0() {
+  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername0}`)
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+
+  const data = await res.json();
+  return data;
+};
+
 async function getBlogs() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
 
@@ -14,8 +25,12 @@ async function getBlogs() {
   return data;
 };
 
+
+
 async function page() {
+  const blogs0 = await getBlogs0();
   const blogs = await getBlogs();
+
 
   return (
     <div className="py-8">
@@ -23,7 +38,7 @@ async function page() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white text-center p-2 px-5 text-2xl rounded-md">
-            All Technical Certifications
+            Some Technical Certifications
             
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
@@ -32,11 +47,18 @@ async function page() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 xl:gap-10">
         {
+          blogs0.map((blog, i) => (
+            blog?.cover_image &&
+            <BlogCard blog={blog} key={i} />
+          ))
+        }
+        {
           blogs.map((blog, i) => (
             blog?.cover_image &&
             <BlogCard blog={blog} key={i} />
           ))
         }
+        
       </div>
     </div>
   );
