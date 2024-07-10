@@ -11,7 +11,7 @@ export const personalData = {
   twitter: 'https://x.com/name_is_vidhey',  
   instagram: 'https://www.instagram.com/b_vidhey/',
   resume: "https://github.com/Vidhey012/Resume/blob/main/Resume_new.pdf",
-  devUsername0: "bvidhey",
-  devUsername: "vidhey071",
+  devUsername: "bvidhey",
+  devUsername1: "vidhey071",
   mediumUsername: "vidheywebsites"
 }
