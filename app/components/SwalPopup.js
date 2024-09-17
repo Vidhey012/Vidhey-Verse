@@ -9,7 +9,7 @@ const SwalPopup = () => {
     Swal.fire({
       title: 'Welcome to my Digital Space 🌟',
       text: 'Let\'s start exploring this website with a musical vibe 🎸🎧🎷',
-      imageUrl: '/profile.png',
+      imageUrl: '/profile.jpg',
       imageAlt: 'Title Logo',
       showConfirmButton: true,
       confirmButtonText: "Explore 🚀",
