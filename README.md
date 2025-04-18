@@ -99,6 +99,8 @@ Eg:
 export const personalData = {
   name: "VIDHEY BHOGADI",
   profile: '/profile.jpg',
+  profile1: '/profile1.jpg',
+  profile2: '/profile2.jpg',
   designation: "Full-Stack Developer",
   description: "My name is Vidhey Bhogadi...",
   email: 'vidhey.bhogadi2003@gmail.com',
@@ -109,7 +111,7 @@ export const personalData = {
   linkedIn: 'https://www.linkedin.com/in/bhogadi-vidhey-aa62b71a8/',
   twitter: 'https://x.com/name_is_vidhey',  
   instagram: 'https://www.instagram.com/b_vidhey/',
-  resume: "https://github.com/Vidhey012/Resume/blob/main/Resume_new.pdf",
+  resume: "https://github.com/Vidhey012/Resume/blob/main/Resume_ATSFREE.pdf",
   devUsername: "vidhey071",
   mediumUsername: "vidheywebsites"
 };
