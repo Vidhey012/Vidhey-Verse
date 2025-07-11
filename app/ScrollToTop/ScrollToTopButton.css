@@ -1,0 +1,16 @@
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    z-index: 1000;
+    opacity: 0;
+  }
+  
+  .scroll-to-top-btn.show {
+    opacity: 1; 
+  }
+
+  
